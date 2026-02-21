@@ -9,6 +9,7 @@ This repo contains my own simple implementation of **Recursive Language Models**
 ### Python Packages
 
 - colorama
+- requests
 - tenacity
 
 ### LLM(s)

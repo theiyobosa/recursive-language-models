@@ -4,7 +4,7 @@ from dataclasses import dataclass
 import json
 import re
 import requests
-from typing import Any, Dict, Optional, Sequence, Tuple
+from typing import Dict, Optional, Sequence, Tuple
 from tenacity import (
     retry, 
     retry_if_exception_type,
