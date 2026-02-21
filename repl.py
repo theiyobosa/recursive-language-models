@@ -3,24 +3,25 @@ from typing import Dict
 
 
 
-# BASE_CODE = """
-# __final_answer__ = None
+BASE_CODE = """
+__final_answer__ = None
 
-# def FINAL(answer):
-#     global __final_answer__
-#     __final_answer__ = answer
+def FINAL(answer):
+    global __final_answer__
+    __final_answer__ = answer
 
-# def FINAL_VAR(variable_name):
-#     global __final_answer__
-#     __final_answer__ = globals()[variable_name]
-# """
+def FINAL_VAR(variable_name):
+    global __final_answer__
+    __final_answer__ = globals()[variable_name]
+"""
 
 
 
 class REPL:
+    
     def __init__(self):
         self.ns = {}
-        # self.run_cell(BASE_CODE)
+        self.run_cell(BASE_CODE)
 
 
     def _clean_code(self, code: str) -> str:
@@ -29,8 +30,7 @@ class REPL:
     
 
     def reset_final_answer(self) -> None:
-        # self.ns['__final_answer__'] = None
-        self.ns["FINAL"] = None
+        self.ns['__final_answer__'] = None
 
 
     def run_cell(self, code: str) -> Dict:
