@@ -4,6 +4,8 @@
 
 This repo contains my own simple implementation of **Recursive Language Models**, based on the paper [Recursive Language Models](https://arxiv.org/abs/2512.24601). This repository only contains work on **RLM with REPL (no sub-calls)**.
 
+![Image](img.png)
+
 ## Tools
 
 ### Python Packages
